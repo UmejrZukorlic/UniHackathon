@@ -11,7 +11,6 @@
 }
 
 .card-image {
-  height: 200px;
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -34,11 +33,11 @@
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-  margin: 4px 0;
+  margin: 8px 0;
 }
 
 .card-level {
-  color: rgb(110, 43, 226);
+  color: rgb(135, 135, 253);
 }
 .card-action {
   display: flex;
@@ -47,7 +46,7 @@
 }
 .card-action button {
   width: 85%;
-  background-color: rgb(110, 43, 226);
+  background-color: rgb(135, 135, 253);
   color: #fff;
   border: none;
   padding: 8px 16px;
@@ -56,14 +55,11 @@
 }
 
 .card-action .favorites {
-  width: 10%;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: rgba(132, 132, 132, 0.231) 2px solid;
-  border-radius: 8px;
-  padding: 0.2rem;
 }
 .card-action .favorites img {
-  width: 80%;
+  width: 1.5rem;
 }
