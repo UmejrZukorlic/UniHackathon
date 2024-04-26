@@ -1,38 +1,243 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header h2{
+  font-size: 20px;
+  padding-left: 80px;
+  cursor: pointer;
+}
+
+header ul {
+
+  display: flex;
+  font-size: 15px;
+  cursor: pointer;
+  
+
+}
+
+header ul li {
+  margin: 20px;
+  list-style: none;
+  text-decoration: none;
+  
+}
+
+header a:hover {
+  color: rgb(135, 135, 253);
+}
+
+header a { 
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  
+}
+
+header button {
+  height: 35px;
+  margin: 20px;
+  padding: 10px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login {
+  font-size: 15px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login:hover {
+  color: rgb(135, 135, 253);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.signup {
+  background-color: rgb(135, 135, 253);
+  border: none;
+  color: white;
+  cursor: pointer;
+
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  margin-left: -680px;
+ 
+}
+main {
+  padding: 50px;
+}
+main h1{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 7vh;
+}
+
+.main p{
+   position: absolute;
+   top: 0;
+   margin-top: 250px;
+   padding: 50px;
+   margin-left: 50px;
+}
+
+.main button {
+  display: flex;
+  margin-top: 120px;
+  padding: 5px;
+  margin-left: 20px;
+  height: 40px;
+  text-align: center;
+  border-radius: 6px;
+  width: 120px;
+  cursor: pointer;
+
+}
+
+.mainBtns {
+  display: flex;
+  margin-right: -145px;
+  -webkit-box-shadow: 10px 10px 23px -20px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 23px -20px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 23px -20px rgba(0,0,0,0.75);
+
+
+
+}
+
+.mainBtn1 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(135, 135, 253);
+  color: white;
+  border: none;
+  -webkit-box-shadow: 10px 10px 30px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 30px -13px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 30px -13px rgba(0,0,0,0.75);
+  
+}
+
+.mainBtn2 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  border: 2px black solid;
+  -webkit-box-shadow: 10px 10px 30px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 30px -13px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 30px -13px rgba(0,0,0,0.75);
+cursor: pointer;
+  
+}
+
+.mainBtn1:hover {
+  transform: scale(105%);
+}
+
+.mainBtn2:hover {
+  transform: scale(105%);
+}
+
+main img {
+  position: absolute;
+  margin-left: 600px;
+  margin-top: -300px;
+  height: 70vh;
+
+  
+}
+
+
+.icons img {
+  height: 40px;
+  padding-right: 20px; /* Add padding to the right of each icon */
+}
+
+
+.icon1, .icon2, .icon3 {
+  margin-top: 50px;
+}
+.icon1 {
+  margin-left: 50px;
+}
+
+.icon2 {
+  margin-left: 150px;
+}
+
+.icon3 {
+  margin-left: 250px;
+}
+
+.main2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center; /* Center-align text */
+  padding: 20px; /* Add padding to the section */
+  margin-top: 150px;
+  
+}
+
+.main2 img {
+  width: 500px; /* Adjust the width of the image */
+  margin-bottom: 20px; /* Add space below the image */
+  align-self: flex-start;
+  margin-left: -10px;
+}
+
+.main2 h2 {
+  margin-bottom: 10px; /* Add space below the heading */
+}
+
+.main2 button {
+  margin-top: 20px; /* Add space above the button */
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(135, 135, 253);
   color: white;
+  border: none;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px 30px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 30px -13px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 30px -13px rgba(0,0,0,0.75);
+  cursor: pointer;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.main2-content {
+  display: flex;
+  align-items: center; /* Align items horizontally */
+  justify-content: center; /* Center-align items */
+  text-align: left;
+  margin-bottom: 20px; /* Add space below the content */
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main2 button:hover {
+  transform: scale(105%);
 }
