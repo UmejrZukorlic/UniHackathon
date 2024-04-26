@@ -1,0 +1,69 @@
+/* Card.css */
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  background-color: #ffffff;
+  max-width: 300px;
+  margin: 0 auto 2rem auto;
+}
+
+.card-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.card-content {
+  margin-top: 16px;
+}
+
+.card-content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-content-params {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.card-level {
+  color: rgb(110, 43, 226);
+}
+.card-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-action button {
+  width: 85%;
+  background-color: rgb(110, 43, 226);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-action .favorites {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgba(132, 132, 132, 0.231) 2px solid;
+  border-radius: 8px;
+  padding: 0.2rem;
+}
+.card-action .favorites img {
+  width: 80%;
+}

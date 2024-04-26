@@ -1,0 +1,28 @@
+.courseSelector {
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+}
+.naslov {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+.blue {
+  color: rgb(110, 43, 226);
+}
+.filter {
+  margin: 5rem 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter .selector {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+.predmeti {
+  display: flex;
+  flex-wrap: wrap;
+}
