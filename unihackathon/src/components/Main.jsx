@@ -12,13 +12,13 @@ function Main() {
         <nav>
           <ul>
             <li>
-              <a href="#">Courses</a>
+              <a href="#">Predmeti</a>
             </li>
             <li>
-              <a href="#">Pricing</a>
+              <a href="#">Liderboard</a>
             </li>
             <li>
-              <a href="#">About</a>
+              <a href="#">Info</a>
             </li>
           </ul>
         </nav>
@@ -30,15 +30,13 @@ function Main() {
 
       <main>
         <div className="landing">
-          <h1>Embark on a Learning Adventure Online</h1>
+          <h1>Krenite u Online Avanturu Učenja</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />{" "}
-            Nesciunt ullam deleniti quasi ipsum repellat exercitationem dolore
-            repellat exercitationem <br />
+          Naša online platforma za učenje nudi pristup interaktivnim lekcijama i resursima, prilagođenim tvojim potrebama i interesovanjima. Uči fleksibilno i efikasno, gde god da se nalaziš, uz podršku stručnih mentora. <br />
           </p>
           <div className="mainBtns">
-            <button className="mainBtn1">Explore more</button>
-            <button className="mainBtn2">Financial Aid</button>
+            <button className="mainBtn1">Predmeti</button>
+            <button className="mainBtn2">Liderboard</button>
           </div>
         </div>
         <img src={Img} alt="kid3d" />
@@ -54,19 +52,13 @@ function Main() {
         <img src={Kids} alt="" />
         <div className="main2-content">
           <h2>
-            Our online education is <br />
-            smart and effective.
+          Naša online edukacija je pametna i efikasna.
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-            Sit rem sint incidunt cupiditate porro recusandae voluptas
-            <br />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Voluptatum, odio? <br />
-            Sit rem sint incidunt cupiditate porro recusandae voluptas{" "}
+          Naša online platforma za učenje nudi pristup interaktivnim lekcijama i resursima, prilagođenim tvojim potrebama i interesovanjima. Uči fleksibilno i efikasno, gde god da se nalaziš, uz podršku stručnih mentora.
           </p>
 
-          <button className="main2btn">Get Started</button>
+          <button className="main2btn">Kreni</button>
         </div>
       </div>
     </>
