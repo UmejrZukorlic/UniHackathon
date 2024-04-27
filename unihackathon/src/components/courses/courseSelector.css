@@ -9,11 +9,8 @@
   width: 50%;
 }
 .blue {
-<<<<<<< Updated upstream
   color: rgb(135, 135, 253);
-=======
   color: rgb(110, 43, 226);
->>>>>>> Stashed changes
 }
 .filter {
   margin: 5rem 0 1rem 0;
@@ -28,10 +25,9 @@
 }
 .predmeti {
   display: flex;
-<<<<<<< Updated upstream
+
   justify-content: space-evenly;
   margin: 1rem;
-=======
->>>>>>> Stashed changes
+
   flex-wrap: wrap;
 }

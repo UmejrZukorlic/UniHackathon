@@ -11,10 +11,6 @@
 }
 
 .card-image {
-<<<<<<< Updated upstream
-=======
-  height: 200px;
->>>>>>> Stashed changes
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -37,19 +33,18 @@
   display: flex;
   justify-content: space-between;
   font-size: 14px;
-<<<<<<< Updated upstream
+
   margin: 8px 0;
 }
 
 .card-level {
   color: rgb(135, 135, 253);
-=======
+
   margin: 4px 0;
 }
 
 .card-level {
   color: rgb(110, 43, 226);
->>>>>>> Stashed changes
 }
 .card-action {
   display: flex;
@@ -58,11 +53,9 @@
 }
 .card-action button {
   width: 85%;
-<<<<<<< Updated upstream
-  background-color: rgb(135, 135, 253);
-=======
+
   background-color: rgb(110, 43, 226);
->>>>>>> Stashed changes
+
   color: #fff;
   border: none;
   padding: 8px 16px;
@@ -71,7 +64,6 @@
 }
 
 .card-action .favorites {
-<<<<<<< Updated upstream
   width: auto;
   display: flex;
   justify-content: center;
@@ -79,16 +71,4 @@
 }
 .card-action .favorites img {
   width: 1.5rem;
-=======
-  width: 10%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: rgba(132, 132, 132, 0.231) 2px solid;
-  border-radius: 8px;
-  padding: 0.2rem;
-}
-.card-action .favorites img {
-  width: 80%;
->>>>>>> Stashed changes
 }

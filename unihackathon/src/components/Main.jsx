@@ -1,6 +1,7 @@
 import React from "react";
 import Img from "../pics/kid.png";
 import Kids from "../pics/kids.png";
+import "../App.css";
 
 function Main() {
   return (
