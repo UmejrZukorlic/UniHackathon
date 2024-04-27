@@ -32,11 +32,14 @@ function Main() {
         <div className="landing">
           <h1>Krenite u Online Avanturu Učenja</h1>
           <p>
-          Naša online platforma za učenje nudi pristup interaktivnim lekcijama i resursima, prilagođenim tvojim potrebama i interesovanjima. Uči fleksibilno i efikasno, gde god da se nalaziš, uz podršku stručnih mentora. <br />
+            Naša online platforma za učenje nudi pristup interaktivnim lekcijama
+            i resursima, prilagođenim tvojim potrebama i interesovanjima. Uči
+            fleksibilno i efikasno, gde god da se nalaziš, uz podršku stručnih
+            mentora. <br />
           </p>
           <div className="mainBtns">
             <button className="mainBtn1">Predmeti</button>
-            <button className="mainBtn2">Liderboard</button>
+            <button className="mainBtn2">Rang Lista</button>
           </div>
         </div>
         <img src={Img} alt="kid3d" />
@@ -51,14 +54,15 @@ function Main() {
       <div className="main2">
         <img src={Kids} alt="" />
         <div className="main2-content">
-          <h2>
-          Naša online edukacija je pametna i efikasna.
-          </h2>
+          <h2>Naša online edukacija je pametna i efikasna.</h2>
           <p>
-          Naša online platforma za učenje nudi pristup interaktivnim lekcijama i resursima, prilagođenim tvojim potrebama i interesovanjima. Uči fleksibilno i efikasno, gde god da se nalaziš, uz podršku stručnih mentora.
+            Naša online platforma za učenje nudi pristup interaktivnim lekcijama
+            i resursima, prilagođenim tvojim potrebama i interesovanjima. Uči
+            fleksibilno i efikasno, gde god da se nalaziš, uz podršku stručnih
+            mentora.
           </p>
 
-          <button className="main2btn">Kreni</button>
+          <button className="main2btn">Započni Avanturu</button>
         </div>
       </div>
     </>
