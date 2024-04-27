@@ -1,7 +1,38 @@
 import React from "react";
 import "./CoursePage.css";
+import slikaMat from '../Pages/matematika.png'
+import { useState } from "react";
+import YouTube from 'react-youtube'
+import Arrow from '../Pages/arrow.png'
 const CoursePage = () => {
+
+  const videoId = 'tHWoEJUhByk';
+
+  const opts = {
+    height: '390',
+    width: '640',
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+    },
+  };
+
+  const onReady = (event) => {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
+  };
+
+  const [collapse, setCollapse] = useState(false);
+
+  const toggleCollapse = () => {
+    setCollapse(!collapse);
+  }
+
+
   return (
+    <>
+ 
+ 
     <div>
       <header>
         <h2>PixelLearning</h2>
@@ -25,15 +56,18 @@ const CoursePage = () => {
         </div>
       </header>
 
-      <div>
-        <h1>Learn Figma – UI/UX Design Essential Training</h1>
+      <div className="naslov">
+        <h1><span style={{ color: 'red' }}>K</span>urs <span style={{ color: 'rgb(135, 135, 253)' }}>O</span>snovnih <span style={{ color: '#FDC726' }}>R</span>acunarskih <span style={{ color: '#F1E1FC' }}>O</span>peracija</h1>
         <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqwuj_kIcz9eTQ4cnBpHJ0kyUPo57QiJ3KlQ&s"
+          src={slikaMat}
           alt="slika"
         />
+        <div className="naslovBtns">
+        <button className="naslovBtn1">Igraj igricu</button>
+        <button  className="naslovBtn2">Uradi kviz</button></div>
       </div>
       <div>
-        <div>
+        <div className="lekcije">
           <p>
             Kurs osnovnih računskih operacija iz matematike obuhvata
             fundamentalne matematičke koncepte i tehnike potrebne za uspešno
@@ -74,32 +108,47 @@ const CoursePage = () => {
             transakcija do rešavanja problema u svakodnevnom životu.
           </p>
         </div>
+
+        
+     
         <section>
           <div>
             <p>Sekcija 1</p> <p>Osnove Brojeva</p>
-          </div>
+            <img src={Arrow} alt="downarrow"  onClick={toggleCollapse}/>
+          </div>   
 
+          {collapse && (
           <div>
-            <div>
-              <p>LEKCIJA 1</p>{" "}
+            <div>           
+              <p>LEKCIJA 1</p>
+              
               <p>
                 Predstavljanje brojeva: celi brojevi, decimalni brojevi,
                 pozitivni i negativni brojevi.
-              </p>
-            </div>
+              </p> 
+              
+              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+
+              <source />
+
+            </div> 
+           
             <div>
               <p>LEKCIJA 2</p>{" "}
               <p>
                 Osnovne operacije: sabiranje, oduzimanje, množenje, deljenje.
               </p>
+              <YouTube videoId={videoId} opts={opts} onReady={onReady} />
+
             </div>
           </div>
-        </section>
+       )}  </section> 
         <section>
           <div>
             <p>Sekcija 2</p> <p>Rad sa razlomcima</p>
+            <img src={Arrow} alt="downarrow"  onClick={toggleCollapse}/>
           </div>
-
+          {collapse && (
           <div>
             <div>
               <p>LEKCIJA 3</p>{" "}
@@ -107,7 +156,7 @@ const CoursePage = () => {
                 Razumevanje razlomaka i osnovne operacije sa razlomcima:
                 sabiranje, oduzimanje, množenje, deljenje.
               </p>
-            </div>
+               </div>  
             <div>
               <p>LEKCIJA 4</p>{" "}
               <p>
@@ -116,12 +165,13 @@ const CoursePage = () => {
               </p>
             </div>
           </div>
-        </section>
+       )} </section>
         <section>
           <div>
             <p>Sekcija 3</p> <p>Procenti i verovatnoća</p>
+            <img src={Arrow} alt="downarrow"  onClick={toggleCollapse}/>
           </div>
-
+          {collapse && (
           <div>
             <div>
               <p>LEKCIJA 5</p>{" "}
@@ -138,11 +188,14 @@ const CoursePage = () => {
               </p>
             </div>
           </div>
-        </section>
+          )}</section>
         <section>
           <div>
             <p>Sekcija 4</p> <p>Praktične primene</p>
+            <img src={Arrow} alt="downarrow"  onClick={toggleCollapse}/>
+
           </div>
+          {collapse && (
 
           <div>
             <div>
@@ -157,7 +210,7 @@ const CoursePage = () => {
               <p>Vežbe za unapređenje brzine i tačnosti u računanju.</p>
             </div>
           </div>
-        </section>
+          )}</section>
         <section>
           <div>
             <p>Sekcija 5</p> <p>Revizija </p>
@@ -175,7 +228,8 @@ const CoursePage = () => {
         </section>
       </div>
     </div>
-  );
-};
+    </>);
+}
+
 
 export default CoursePage;
