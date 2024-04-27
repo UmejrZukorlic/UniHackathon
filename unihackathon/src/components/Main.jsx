@@ -2,6 +2,7 @@ import React from "react";
 import Img from "../pics/kid.png";
 import Kids from "../pics/kids.png";
 import "../App.css";
+import { Link } from 'react-router-dom'
 
 function Main() {
   return (
@@ -23,8 +24,8 @@ function Main() {
           </ul>
         </nav>
         <div>
-          <button className="login">Log in</button>
-          <button className="signup">Register</button>
+        <Link to='/login'><button className="login">Log in</button></Link>
+          <Link to='/register'> <button className="signup">Register</button></Link>
         </div>
       </header>
 

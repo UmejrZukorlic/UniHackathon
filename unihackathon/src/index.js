@@ -6,6 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import CourseSelector from "./components/courses/CourseSelector";
 import Main from "./components/Main";
 import CoursePage from "./components/CoursePage/CoursePage";
+import Register from '../src/components/Pages/Register'
+import Login from '../src/components/Pages/Login'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,6 +24,8 @@ root.render(
           }
         />
         <Route path="/predavanje" element={<CoursePage />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

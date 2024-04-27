@@ -1,0 +1,76 @@
+
+.body {
+  background-color: rgb(230, 230, 230);
+}
+.registerh1 {
+    position: absolute; 
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-decoration: none;
+    
+}
+.registration-container {
+  border: 2px solid rgb(135, 135, 253); 
+  padding: 40px; 
+  width: fit-content; 
+  margin: auto; 
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  display: flex; 
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+.registration-button {
+  background-color: rgb(135, 135, 253);
+  color: white;
+  padding: 10px 20px; 
+  border: none; 
+  cursor: pointer; 
+  margin: 0 10px; 
+}
+
+.registration-button:hover {
+  background-color: #2980b9; 
+  transform: scale(105%);
+  transition: 0.5s;
+}
+
+
+
+form {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9); 
+        color: whitesmoke;
+    
+}
+
+input {
+    margin-top: 20px;
+    height: 30px;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    margin-top: 20px;
+}
