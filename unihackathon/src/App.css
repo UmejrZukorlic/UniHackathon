@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
 }
 
 header {
@@ -113,6 +114,7 @@ main button {
   background-color: rgb(135, 135, 253);
   color: white;
   border: none;
+  width: 120px;
   -webkit-box-shadow: 10px 10px 30px -13px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 30px -13px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 30px -13px rgba(0, 0, 0, 0.75);

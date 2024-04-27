@@ -40,7 +40,8 @@ function Main() {
             mentora. <br />
           </p>
           <div className="mainBtns">
-            <button className="mainBtn1">Predmeti</button>
+            <Link to='/predavanje'>
+            <button className="mainBtn1">Predavanja</button></Link>
             <button className="mainBtn2">Rang Lista</button>
           </div>
         </div>
