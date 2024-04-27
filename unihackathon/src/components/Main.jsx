@@ -43,12 +43,6 @@ function Main() {
           </div>
         </div>
         <img src={Img} alt="kid3d" />
-
-        {/* <div className="icons">
-          <img src={Star} alt="" className="icon1" />
-          <img src={Hat} alt="" className="icon2" />
-          <img src={Teacher} alt="" className="icon3" />
-        </div> */}
       </main>
 
       <div className="main2">
