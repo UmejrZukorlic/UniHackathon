@@ -1,15 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import CourseSelector from "./components/courses/CourseSelector";
 import Main from "./components/Main";
+import CoursePage from "./components/CoursePage/CoursePage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Main />
-    <CourseSelector />
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Main />
+              <CourseSelector />
+            </>
+          }
+        />
+        <Route path="/predavanje" element={<CoursePage />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
