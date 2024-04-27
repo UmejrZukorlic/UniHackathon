@@ -1,9 +1,5 @@
 import React from "react";
-import style from "../App.css";
 import Img from "../pics/kid.png";
-import Hat from "../pics/hat.png";
-import Star from "../pics/star.png";
-import Teacher from "../pics/teacher.png";
 import Kids from "../pics/kids.png";
 
 function Main() {
